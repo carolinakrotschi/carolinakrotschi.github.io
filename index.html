@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carolina Krotsch</title>
+<meta name="description" content="Carolina Krotsch &mdash; physics master&rsquo;s student at TUM, interested in nanophotonics, laser physics and semiconductors. Helping build the world&rsquo;s first all-optical THz CPU at Akhetonics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout: one-screen statement hero (huge name, cutout portrait in front, outline letters where she overlaps them), then a dark navy band with focus, three short paragraphs and the links. Fixed look by choice. */
+:root{
+  --sand:#e8ebf2;
+  --ink:#0d1530;
+  --dark:#0d1530;
+  --soft:#c3c9da;
+  --mut:#8890a8;
+  --acc:#2f55d4;
+  --acc-hi:#6f8cff;
+  --edge:#27325a;
+  --f-display:"Archivo","Arial Black",system-ui,sans-serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+img{max-width:100%}
+body{margin:0;background:var(--dark);color:#fff;font-family:var(--f-body);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+a:focus-visible{outline:2px solid var(--acc-hi);outline-offset:3px;border-radius:4px}
+.gutter{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+
+/* Hero */
+.hero{position:relative;background:var(--sand);overflow:hidden}
+.stack{position:relative;max-width:1180px;margin:0 auto;height:clamp(440px,57vw,500px)}
+.layer{position:absolute;inset:0;pointer-events:none}
+.name{
+  position:absolute;left:0;right:0;bottom:13%;margin:0;text-align:center;
+  font-family:var(--f-display);font-weight:900;text-transform:uppercase;letter-spacing:-.025em;
+  font-size:clamp(3.1rem,14.2vw,7.8rem);line-height:.86;
+}
+.name span{display:block}
+.solid .name{color:var(--ink)}
+.outline{z-index:4;
+  -webkit-mask:url(person.webp) no-repeat center bottom / auto 100%;
+          mask:url(person.webp) no-repeat center bottom / auto 100%}
+.outline .name{color:transparent;-webkit-text-stroke:2px #fff}
+.solid{z-index:1}
+.person{position:absolute;z-index:3;left:50%;bottom:0;transform:translateX(-50%);height:100%;width:auto;max-width:none;display:block}
+
+/* Intro band */
+.band{max-width:640px;margin:0 auto;padding-block:64px 80px}
+.focus{list-style:none;margin:0 0 40px;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.focus li{font-family:var(--f-display);font-weight:700;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;
+  padding:8px 14px;border:1px solid var(--edge);border-radius:999px;display:flex;align-items:center;gap:8px}
+.focus li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--acc-hi)}
+.txt p{margin:0 0 18px;color:var(--soft);text-wrap:pretty}
+.txt p:last-child{margin-bottom:0}
+.txt a{color:#fff;border-bottom:2px solid var(--acc-hi)}
+.txt a:hover{color:var(--acc-hi)}
+.links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:44px}
+.btn{font-family:var(--f-display);font-weight:700;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;
+  padding:14px 22px;border-radius:8px;border:1px solid var(--edge);transition:border-color .2s,background .2s}
+.btn:hover{border-color:var(--acc-hi)}
+.btn.pri{background:var(--acc);border-color:var(--acc)}
+.btn.pri:hover{background:#3d63e6}
+
+@media (max-width:600px){
+  .stack{height:470px}
+  .name{bottom:auto;top:12%;font-size:16.5vw}
+  .person{height:64%}
+    .outline{-webkit-mask-size:auto 64%;mask-size:auto 64%}
+  .outline .name{-webkit-text-stroke:1.3px #fff}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+
+<header class="hero">
+  <div class="stack gutter">
+    <div class="layer solid"><h1 class="name"><span>Carolina</span><span>Krotsch</span></h1></div>
+    <img class="person" src="person.webp" alt="Carolina Krotsch" width="679" height="1060">
+    <div class="layer outline" aria-hidden="true"><div class="name"><span>Carolina</span><span>Krotsch</span></div></div>
+  </div>
+</header>
+
+<main class="band gutter" id="about">
+  <ul class="focus" aria-label="Focus">
+    <li>Nanophotonics</li>
+    <li>Semiconductors</li>
+    <li>Deep Tech Entrepreneurship</li>
+  </ul>
+  <div class="txt">
+    <p>I&rsquo;m a physics master&rsquo;s student at the <a href="https://www.tum.de/en/" target="_blank" rel="noopener">Technical University of Munich</a>, interested in nanophotonics, laser physics and semiconductors. I was the first bachelor&rsquo;s student accepted into Nobel laureate Ferenc Krausz&rsquo;s attosecond group at the <a href="https://www.mpq.mpg.de/en" target="_blank" rel="noopener">Max Planck Institute of Quantum Optics</a>, where I built an interferometer resolving sub-quarter-wavelength displacements.</p>
+    <p>As much as I love physics, I love the deep-tech companies that grow out of it. I ran high-voltage reliability measurements on gallium nitride power transistors at <a href="https://www.infineon.com" target="_blank" rel="noopener">Infineon</a>, and now I&rsquo;m helping build the world&rsquo;s first all-optical THz CPU at <a href="https://www.akhetonics.com" target="_blank" rel="noopener">Akhetonics</a>.</p>
+    <p>Beyond the technical side, I&rsquo;ve learned to lead teams and grow a business at scale. I led the Spain expansion of the edtech startup <a href="https://ubimaster.de/" target="_blank" rel="noopener">ubiMaster</a> and built a hackathon platform end to end for <a href="https://www.startmunich.de/" target="_blank" rel="noopener">START Munich</a>.</p>
+  </div>
+  <nav class="links" aria-label="Links">
+    <a class="btn pri" href="cv.pdf" target="_blank" rel="noopener">CV</a>
+    <a class="btn" href="https://www.linkedin.com/in/carolina-krotsch" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="mailto:ckrotsch@yahoo.de">Email</a>
+  </nav>
+</main>
+
+</body>
+</html>
