@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carolina Krotsch</title>
+<meta name="description" content="Carolina Krotsch — physics master’s student at TUM, interested in nanophotonics, laser physics and semiconductors. Helping build the world’s first all-optical THz CPU at Akhetonics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
+<style>
+/* Layout: Swiss grid — oversized name, hairline rules, photo + focus column beside the text, link row at the bottom. Single fixed light look by choice. */
+:root{
+  --bg:#f3f4f6;
+  --ink:#0c0d12;
+  --muted:#5d6070;
+  --rule:#c9cbd3;
+  --accent:#1f3cff;
+  --f:"Archivo","Helvetica Neue",Arial,system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+img{max-width:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.in{
+  max-width:860px;margin:0 auto;padding-block:clamp(40px,7vw,72px) 72px;
+  padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));
+}
+a{text-decoration:none}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1{
+  font-weight:850;font-stretch:118%;font-size:clamp(2.9rem,11vw,6.2rem);line-height:.88;letter-spacing:-.035em;
+  text-transform:uppercase;margin:0 0 36px;border-top:2px solid var(--ink);padding-top:28px;
+}
+h1 span{color:var(--accent)}
+.grid{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px 40px;border-top:1px solid var(--rule);padding-top:28px}
+.pic{display:block;width:100%;max-width:200px;aspect-ratio:1;height:auto;object-fit:cover;object-position:50% 22%;border-radius:50%}
+ul{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:8px}
+li{font-weight:700;font-stretch:110%;font-size:.86rem;text-transform:uppercase;letter-spacing:.02em}
+li::before{content:"↗";color:var(--accent);margin-right:8px}
+.txt{font-size:1.08rem;max-width:58ch;min-width:0}
+.txt p{margin:0 0 16px;text-wrap:pretty}
+.txt p:last-child{margin-bottom:0}
+.txt a{color:var(--ink);border-bottom:2px solid var(--accent)}
+.txt a:hover{color:var(--accent)}
+.links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink);margin-top:48px}
+.links a{
+  color:var(--ink);font-weight:700;font-stretch:112%;text-transform:uppercase;font-size:.95rem;padding:18px 0;
+  border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:8px;min-width:0;
+}
+.links a+a{padding-left:16px;border-left:1px solid var(--rule)}
+.links a::after{content:"→";color:var(--accent);padding-right:12px;transition:transform .2s}
+.links a:hover{color:var(--accent)}
+.links a:hover::after{transform:translateX(4px)}
+@media (max-width:640px){
+  .grid{grid-template-columns:1fr}
+  .side{display:flex;gap:20px;align-items:center}
+  .pic{max-width:130px;flex:none}
+  ul{margin-top:0}
+  .links{grid-template-columns:1fr}
+  .links a+a{padding-left:0;border-left:0}
+}
+@media (prefers-reduced-motion:reduce){.links a::after{transition:none}}
+</style>
+</head>
+<body>
+
+
+<main class="in">
+  <h1>Carolina<br>Krotsch<span>.</span></h1>
+
+  <div class="grid">
+    <div class="side">
+      <img class="pic" src="portrait.jpg" alt="Carolina Krotsch" width="207" height="265">
+      <ul aria-label="Focus">
+        <li>Nanophotonics</li>
+        <li>Semiconductors</li>
+        <li>Deep Tech Entrepreneurship</li>
+      </ul>
+    </div>
+    <div class="txt">
+      <p>I’m a physics master’s student at the <a href="https://www.tum.de/en/" target="_blank" rel="noopener">Technical University of Munich</a>, interested in nanophotonics, laser physics and semiconductors. I was the first bachelor’s student accepted into Nobel laureate Ferenc Krausz’s attosecond group at the <a href="https://www.mpq.mpg.de/en" target="_blank" rel="noopener">Max Planck Institute of Quantum Optics</a>, where I built an interferometer resolving sub-quarter-wavelength displacements.</p>
+      <p>As much as I love physics, I love the deep-tech companies that grow out of it. I ran high-voltage reliability measurements on gallium nitride power transistors at <a href="https://www.infineon.com" target="_blank" rel="noopener">Infineon</a>, and now I’m helping build the world’s first all-optical THz CPU at <a href="https://www.akhetonics.com" target="_blank" rel="noopener">Akhetonics</a>.</p>
+      <p>Beyond the technical side, I’ve learned to lead teams and grow a business at scale. I led the Spain expansion of the edtech startup <a href="https://ubimaster.de/" target="_blank" rel="noopener">ubiMaster</a> and built a hackathon platform end to end for <a href="https://www.startmunich.de/" target="_blank" rel="noopener">START Munich</a>.</p>
+    </div>
+  </div>
+
+  <nav class="links" aria-label="Links">
+    <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
+    <a href="https://www.linkedin.com/in/carolina-krotsch" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:ckrotsch@yahoo.de">Email</a>
+  </nav>
+</main>
+
+</body>
+</html>
